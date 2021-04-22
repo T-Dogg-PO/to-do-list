@@ -9,9 +9,18 @@ function newItem() {
     // Store the ordered list element in a variable
     let orderedList = $('#list');
 
-    // Append the inputValue to listItem
-    listItem.append(inputValue);
+    // Check to make sure the input isn't empty
+    if (inputValue === '') {
+        alert('Please input something!');
+    } else {
+        // Append the inputValue to listItem
+        listItem.append(inputValue);
+        // Append the listItem to the orderedList
+        orderedList.append(listItem);
+    }
 
-    // Append the listItem to the orderedList
-    orderedList.append(listItem);
+    // Event listener for crossing off an item when it's double clicked
+    listItem.on('dblclick', function() {
+        listItem.toggleClass('strike');
+    });
 }
