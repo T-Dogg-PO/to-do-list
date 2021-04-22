@@ -1,1 +1,0 @@
-let element = $('.my-class');
