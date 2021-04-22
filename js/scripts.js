@@ -42,5 +42,4 @@ function newItem() {
 
     // Make the ordered list sortable by dragging and dropping the list items
     orderedList.sortable();
-
 }
