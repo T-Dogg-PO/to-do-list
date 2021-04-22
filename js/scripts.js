@@ -40,7 +40,7 @@ function newItem() {
     // Add event listener to call deleteListItem when the X is clicked
     deleteButton.on('click', deleteListItem);
 
-
-
+    // Make the ordered list sortable by dragging and dropping the list items
+    orderedList.sortable();
 
 }
